@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   "homepage": "https://github.com/tgaff/tunely#readme",
   "dependencies": {
     "bower": "^1.7.8",
-    "express": "^4.13.3"
-  }
+    "express": "^4.14.0"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {}
 }

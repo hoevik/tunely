@@ -17,8 +17,8 @@ Now would be a great time to explore the files provided for you.  In particular 
 
 ### Working through the lab
 
-Use `nodemon` or `node server.js` throughout the exercise to run your server.  
-Continually verify that your browser console is displaying the `app.js loaded!` message on document-ready.
+<!-- Use `nodemon` or `node server.js` throughout the exercise to run your server.  
+Continually verify that your browser console is displaying the `app.js loaded!` message on document-ready. -->
 
 ## Step 1:
 **Goal** display hard-coded data from `app.js` on `index.html`

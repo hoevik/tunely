@@ -24,11 +24,11 @@ Continually verify that your browser console is displaying the `app.js loaded!` 
 **Goal** display hard-coded data from `app.js` on `index.html`
 Let's start on the outside and work our way in.  
 
-1. Open `index.html` and find the HTML for an **album**. Convert this into a handlebars template by adding the correct script tags.  Make sure you remove the data and place appropriate attribute placeholders in place instead.  (You can get those attributes from the array of objects provided in `app.js`)  Leave `div.albums` in place.
+<!-- 1. Open `index.html` and find the HTML for an **album**. Convert this into a handlebars template by adding the correct script tags.  Make sure you remove the data and place appropriate attribute placeholders in place instead.  (You can get those attributes from the array of objects provided in `app.js`)  Leave `div.albums` in place. -->
 
-1. Open `app.js` and edit the function `renderAlbum` to display one Album on the page.  Use the handlebars template.  
+<!-- 1. Open `app.js` and edit the function `renderAlbum` to display one Album on the page.  Use the handlebars template.   -->
 
-1. Run the function on document-ready and give it `sampleAlbums[0]` (just one album).  Verify that the page looks right.
+<!-- 1. Run the function on document-ready and give it `sampleAlbums[0]` (just one album).  Verify that the page looks right.
 
 <details><summary>hint: calling renderAlbum</summary>
 
@@ -38,7 +38,7 @@ $(document).ready(function() {
   renderAlbum(sampleAlbums[0]);
 });
 ```
-</details>
+</details> -->
 
 
 ## Step 1.5: rendering all the albums

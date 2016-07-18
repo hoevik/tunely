@@ -48,5 +48,8 @@ $(document).ready(function() {
 // this function takes a single album and renders it to the page
 function renderAlbum(album) {
   console.log('rendering album:', album);
-
+  var albumHtml = $('#album-template');
+  var albumsTemplate = Handlebars.compile(albumHtml);
+  var html = albumsTemplate(albums);
+  $('#albums').prepend(html);
 }

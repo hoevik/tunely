@@ -22,7 +22,7 @@ This sprint we will:
 > Hint: You can build your own form or use some [pre-made html](/docs/code_samples/sprint2_form.html).
 
 
-## Step 2:
+### Step 2:
 
 1. Edit your `app.js`. Use jQuery to capture the form values and serialize them.  `console.log` the output.
 

@@ -1,11 +1,5 @@
 /* CLIENT-SIDE JS
- *
- * You may edit this file as you see fit.  Try to separate different components
- * into functions and objects as needed.
- *
  */
-
-
 $(document).ready(function() {
   console.log('app.js loaded!');
   $.get('/api/albums').success(function (albums) {
@@ -13,6 +7,7 @@ $(document).ready(function() {
       renderAlbum(album);
     });
   });
+
 
   $('#album-form form').on('submit', function(e) {
     e.preventDefault();
@@ -25,8 +20,12 @@ $(document).ready(function() {
     $(this).trigger("reset");
   });
 
-});
+  // catch and handle the click on an add song button
+  $('#albums').on('click', '.add-song', handleAddSongClick);
 
+  // save song modal save button
+$('#saveSong').on('click', handleNewSongSubmit);
+});
 
 // this function takes a single album and renders it to the page
 function renderAlbum(album) {
@@ -35,4 +34,10 @@ function renderAlbum(album) {
   var albumsTemplate = Handlebars.compile(albumHtml);
   var html = albumsTemplate(album);
   $('#albums').prepend(html);
+}
+
+// when the add song button is clicked the modal display
+
+function handleAddSongClick(e){
+  console.log('add song clicked!');
 }
